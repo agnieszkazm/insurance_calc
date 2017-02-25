@@ -1,0 +1,64 @@
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>ubezpiecz auto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href ="style.css">
+</head>
+<body>
+	<header class="header">
+  		<div class="container">
+   			<div class="row">
+   				<div class="col-12">
+   					<div class="logo">
+        				<h2>Oblicz wysokość składki ubezpieczenia swojego auta:</h2>
+        				<p> z nami bezpiecznie do celu...</p>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+     </header>
+     <section class="insurance-calc">
+     	<div class="container">
+     		<div class="row">
+     			<div class="col-12">		
+        			<div id="komunikat2"></div>
+        				<input type="text" id="pole_stawka" placeholder="podaj stawkę ubezpieczenie" onfocus="this.placeholder=''" onblur="this.placeholder='podaj stawkę ubezpieczenie'" required>
+        				<div id="komunikat1"></div>   
+        				<input type="text" id="pole_szkoda" placeholder="czy jazda była bezszkodowa" onfocus="this.placeholder=''" onblur="this.placeholder='czy jazda była bezszkodowa'" required>   
+        				<div id="komunikat3"></div>
+        				<label for="raty">W ilu ratach chcesz opłacić ubezpieczenie:
+       				 	</label>
+        				<select type="text" id="pole_raty">
+		      				<option value="1">w jednej racie</option>
+		      				<option value="2">w dwóch ratach</option>
+		      				<option value="4">w czterech ratach</option>
+	     				</select>
+	     				<input type="submit" value="oblicz" onclick="oplata()"/>   
+	     			
+      			</div>
+      		</div>
+      	</div>
+      </section>
+      <section class="calc-contribution">
+      	<div class="container">
+      		<div class="row">
+      			<div class="col-12">      
+  					<div id="wynik"></div>
+  				</div>
+  			</div>
+  		</div>
+  	</section>
+  	<footer>
+  		<div class="container">
+  			<div class="row">
+  				<div class ="col-12">
+  					<p> Ubezpiecz się na podróż</p>
+  					<p>&copy; Copyright by me!</p>
+  				</div>
+  			</div>
+  		</div>
+  	</footer>
+  	<script src="insurance.js"></script>
+  </body>
+  </html>
