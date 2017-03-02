@@ -10,11 +10,14 @@
 	<header class="header">
   		<div class="container">
    			<div class="row">
-   				<div class="col-12">
-   					<div class="logo">
-        				<h2>Oblicz wysokość składki ubezpieczenia swojego auta:</h2>
-        				<p> z nami bezpiecznie do celu...</p>
-        			</div>
+   				<div class="col-12"> 
+   					  <div class="logo">
+        				  <h2>Oblicz wysokość składki ubezpieczenia Twojego auta</h2>
+        				  <p> z nami bezpiecznie do celu...</p>
+        		  </div>
+              <div class="hero">
+               <img src="img/road-traffic.jpg">
+              </div>
         		</div>
         	</div>
         </div>
@@ -22,7 +25,8 @@
      <section class="insurance-calc">
      	<div class="container">
      		<div class="row">
-     			<div class="col-12">		
+     			<div class="col-12">	
+            <h2>Kalkulator stawki ubezpieczenia</h2>	
         			<div id="komunikat2"></div>
         				<input type="text" id="pole_stawka" placeholder="podaj stawkę ubezpieczenie" onfocus="this.placeholder=''" onblur="this.placeholder='podaj stawkę ubezpieczenie'" required>
         				<div id="komunikat1"></div>   
@@ -35,21 +39,15 @@
 		      				<option value="2">w dwóch ratach</option>
 		      				<option value="4">w czterech ratach</option>
 	     				</select>
-	     				<input type="submit" value="oblicz" onclick="oplata()"/>   
-	     			
+	     				<input type="submit" value="oblicz" onclick="oplata()"/> 
+                <div class="calc-contribution"> 
+	     			     <div id="wynik">   
+                 </div>
+                </div>
       			</div>
       		</div>
       	</div>
       </section>
-      <section class="calc-contribution">
-      	<div class="container">
-      		<div class="row">
-      			<div class="col-12">      
-  					<div id="wynik"></div>
-  				</div>
-  			</div>
-  		</div>
-  	</section>
   	<footer>
   		<div class="container">
   			<div class="row">
