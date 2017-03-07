@@ -50,9 +50,9 @@ header {
 .logo {
 	z-index: 2;
 	position: absolute;
-	width: 100%;
+	left: 0;
+	right: 0;
 	margin-top: 150px;
-	
 }
 .logo h2 {
 	display: inline-block;
